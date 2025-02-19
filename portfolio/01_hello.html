@@ -1,0 +1,120 @@
+<!-- https://youtu.be/_xkSvufmjEs?si=mh-MXT2ZdUasYAYn&t=3416 -->
+<!-- adobe.ly/2GAgF93 -->
+<!-- https://scrimba.com/build-and-deploy-your-portfolio-c012 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="" UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/img/logo.svg">
+
+    <!-- Help auto scale for desktop & mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rudy Castan Portfolio Website</title>
+
+    <!-- Normalize the difference across browsers  https://necolas.github.io/normalize.css/ -->
+    <link rel="stylesheet" href="/external/normalize.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+    <!-- https://fonts.google.com/selection/embed -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <!-- alt text can be blank since the logo is purely decorative and putting something like logo isn't actually helpful -->
+            <img src="/img/logo.svg" alt="" style="width: 50px; height: auto;">
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="/index.html" class="nav__link">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="/index.html#skills" class="nav__link">Skills</a>
+                </li>
+                <li class="nav__item">
+                    <a href="/index.html#about" class="nav__link">About Me</a>
+                </li>
+                <li class="nav__item">
+                    <a href="/index.html#projects" class="nav__link">Projects</a>
+                </li>
+                <li class="nav__item">
+                    <a href="/index.html#resume" class="nav__link">Resume</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Introduction -->
+    <section class="intro">
+        <h1 class="section__title section__title--intro">
+            Project <strong>Hello Quad</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">DigiPen Graphics HW</p>
+        <img src="/img/portfolio_thumbnails/01_hello.jpg" alt="a picture of this portfolio item" class="intro__img">
+    </section>
+
+    <div class="portfolio-item-individual">
+
+        <p>The Hello Quad project was a part of my CS250 Computer Graphics course at DigiPen. The goal of this
+            assignment was to get an OpenGL project building & running for Windows & Web by displaying a simple animated
+            quad.</p>
+
+        <h2>Tasks Completed</h2>
+        <!-- <p>For this project, I completed the following tasks:</p> -->
+        <ul>
+            <li>Implemented classes to encapsulate OpenGL <code>Textures</code>, <code>VertexBuffers</code>,
+                <code>IndexBuffers</code>, and <code>VertexArrays</code>.</li>
+            <li>Created a pair of <code>vertex</code> and <code>fragment</code> shaders to display a quad mesh.</li>
+            <li>Updating the Demo logic to feed the animations based on time, frame count, and mouse position.</li>
+            <li>Create my own animations in the shader code to display the quad in a fun way.</li>
+        </ul>
+
+        <h2>Reflection</h2>
+        <p>During development, I identified an overlooked issue where the shader animations were not synchronizing
+            correctly with the frame updates. By implementing a time-based uniform in the shaders, I was able to achieve
+            smooth and synchronized animations. This project significantly enhanced my understanding of shader
+            programming and creating a starting point for OpenGL graphics development.</p>
+    </div>
+
+    <div class="portfolio-item-individual">
+        <h2>Demo</h2>
+        <iframe id="demo" src="/webgl/D01HelloQuad/graphics_fun.html"></iframe>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="mailto:rudy.castan@digipen.edu" class="footer__link">rudy.castan@digipen.edu</a>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://linkedin.com/in/rudycastan">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://github.com/rudy-digipen">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="/js/index.js"></script>
+
+</body>
+
+</html>

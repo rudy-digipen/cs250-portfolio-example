@@ -1,0 +1,291 @@
+<!-- https://youtu.be/_xkSvufmjEs?si=mh-MXT2ZdUasYAYn&t=3416 -->
+<!-- adobe.ly/2GAgF93 -->
+<!-- https://scrimba.com/build-and-deploy-your-portfolio-c012 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="" UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/img/logo.svg">
+
+    <!-- Help auto scale for desktop & mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rudy Castan Portfolio Website</title>
+
+    <!-- Normalize the difference across browsers  https://necolas.github.io/normalize.css/ -->
+    <link rel="stylesheet" href="external/normalize.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+    <!-- https://fonts.google.com/selection/embed -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <!-- alt text can be blank since the logo is purely decorative and putting something like logo isn't actually helpful -->
+            <img src="/img/logo.svg" alt="" style="width: 50px; height: auto;">
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="/index.html" class="nav__link">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="/index.html#skills" class="nav__link">Skills</a>
+                </li>
+                <li class="nav__item">
+                    <a href="/index.html#about" class="nav__link">About Me</a>
+                </li>
+                <li class="nav__item">
+                    <a href="/index.html#projects" class="nav__link">Projects</a>
+                </li>
+                <li class="nav__item">
+                    <a href="/index.html#resume" class="nav__link">Resume</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- <iframe id="background-iframe" style="width: 1280px; height: 960px; overflow: hidden; float:middle"
+    src="/webgl/for_fun.html"></iframe> -->
+
+    <!-- Introduction -->
+
+    <section class="intro" id="#home">
+        <div class="intro-bg">
+            <iframe src="/webgl/for_fun.html"></iframe>
+        </div>
+        <h1 class="section__title section__title--intro">
+            Hi, I am <strong>Rudy Castan</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">Game Programmer</p>
+        <img src="img/face.jpg" alt="a picture of Rudy Castan smiling" class="intro__img" />
+    </section>
+
+    <!-- My Services -->
+    <section class="my-services" id="skills">
+        <h2 class="section__title section__title--services">What I do</h2>
+        <div class="services">
+            <div class="service">
+                <h3>C++ Programmer</h3>
+                <p>
+                    C++ is my favorite programming language because it empowers me to
+                    express myself at both low and high levels. Despite its quirks, the
+                    benefits far outweigh them. I enjoy the challenge of balancing
+                    intuitive, maintainable code with optimized performance. I've been
+                    programming with C++ since the beginning of my career and am
+                    thoroughly enjoying modern C++.
+                </p>
+            </div>
+
+            <div class="service">
+                <h3>CS Lecturer</h3>
+                <p>
+                    Teaching programming CS courses for DigiPen's Real-Time Interactive
+                    Simulation (RTIS) program has been incredibly rewarding. I love game
+                    development and C++, and helping students with these topics is a
+                    passion of mine. Seeing the lightbulb turn on for students makes it
+                    all worthwhile. Engaging with people who share similar interests and
+                    preparing them for successful careers is the best part of my job.
+                </p>
+            </div>
+
+            <div class="service">
+                <h3>Build Automation</h3>
+                <p>
+                    I have extensive experience in build automation, having scripted
+                    builds for a cross-platform game engine targeting iOS, Android,
+                    Windows, Linux, and the web. I utilized Jenkins to test code and
+                    assets, build projects and their dev/release versions, sign, and
+                    deploy them. Recently, I've been exploring GitHub Actions for
+                    continuous integration and continuous deployment (CI/CD).
+                </p>
+            </div>
+        </div>
+
+        <a href="#projects" class="btn">Projects</a>
+    </section>
+
+    <!-- About Me -->
+    <section class="about-me" id="about">
+        <h2 class="section__title section__title--about">Who I am</h2>
+        <p class="section__subtitle section__subtitle--about">
+            C++ Game Programmer and Lecturer based out of Daegu, Korea
+        </p>
+
+        <div class="about-me__body">
+            <p>
+                Lecturer at Digipen-KMU Special Program in Daegu, Korea in the
+                Computer Science department, teaching foundational game programming
+                and computer graphics. Happy to share and discuss programming with
+                anyone and everyone who are interested.
+            </p>
+            <p>
+                Also, experienced Game Programmer with a demonstrated history of
+                working in the games industry, mostly in the San Francisco area.
+                Skilled in C++, C#, Python, Cross Platform Development, Build
+                Automation, and General Game Programming. Strong education
+                professional with a Bachelor of Science (BS) focused in Real Time
+                Interactive Simulation from Digipen Institute of Technology.
+            </p>
+        </div>
+        <img src="img/tall.jpg" alt="picture of rudy castan" class="about-me__img" />
+    </section>
+
+    <!-- My Portfolio -->
+    <section class="my-projects" id="projects">
+        <h2 class="section__title section__title--projects">My Projects</h2>
+        <p class="section__subtitle section__subtitle--projects">
+            A selection of my range of projects
+        </p>
+        <div class="portfolio">
+            <a href="portfolio/01_hello.html" class="portfolio__item">
+                <img src="img/portfolio_thumbnails/01_hello.jpg" alt="" class="portfolio__img" />
+            </a>
+            <a href="portfolio/02_meshes.html" class="portfolio__item">
+                <img src="img/portfolio_thumbnails/02_meshes.jpg" alt="" class="portfolio__img" />
+            </a>
+            <a href="portfolio/03_fog.html" class="portfolio__item">
+                <img src="img/portfolio_thumbnails/03_fog.jpg" alt="" class="portfolio__img" />
+            </a>
+            <a href="portfolio/04_toon.html" class="portfolio__item">
+                <img src="img/portfolio_thumbnails/04_toon.jpg" alt="" class="portfolio__img" />
+            </a>
+            <a href="portfolio/05_shadow.html" class="portfolio__item">
+                <img src="img/portfolio_thumbnails/05_shadow.jpg" alt="" class="portfolio__img" />
+            </a>
+            <a href="portfolio/06_value.html" class="portfolio__item">
+                <img src="img/portfolio_thumbnails/06_value.jpg" alt="" class="portfolio__img" />
+            </a>
+            <a href="portfolio/07_gradient.html" class="portfolio__item">
+                <img src="img/portfolio_thumbnails/07_gradient.jpg" alt="" class="portfolio__img" />
+            </a>
+
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section class="my-resume" id="resume">
+        <h2 class="section__title section__title--resume">Resume</h2>
+        <a target="_blank" href="/docs/Resume-Rudy-Castan.pdf"><i class="far fa-file-pdf"></i> PDF</a>
+
+        <div class="resume-section">
+            <h3>Experience</h3>
+            <div class="resume-item">
+                <p>
+                    <b>Lecturer, Digipen-KMU Special Program</b></br>
+                    Jun 2017 - Present</br>
+                    <em>Daegu, KR</em></br>
+                    I help teach all the 1st and 2nd year CS courses for the RTIS program : Computer Environment,
+                    High-level Programming I:
+                    The C Programming Language, High-level Programming II: The C++ Programming Language, Game
+                    Implementation Techniques, Operating System I: Man-Machine Interface, Computer Graphics I, Advanced
+                    C/C++, Computer Graphics II.
+                </p>
+            </div>
+            <div class="resume-item">
+                <p>
+                    <b>Contract Game Programmer for MunkyFun</b></br>
+                    Sep 2015 - Mar 2017 (1 year 7 months) </br>
+                    <em>Remote</em></br>
+                    I worked remotely for MunkyFun, where I fixed, updated, and maintained iOS and Android platform
+                    tasks for multiple games. I created and improved automated logging and build systems, developed
+                    tools for live ops data management, and managed source control repositories, contributing to the
+                    successful release of titles such as Psych!, Crystal Chimes, and League of War: Mercenaries.
+                </p>
+            </div>
+            <div class="resume-item">
+                <p>
+                    <b>Senior Engineer for MunkyFun</b></br>
+                    Sep 2013 - Sep 2015 (2 years 1 month) </br>
+                    <em>San Francisco, CA</em></br>
+                    As a platform and tools engineer, I developed and maintained Android, iOS, and Windows technology
+                    for a cross-platform game engine, as well as the build process for these platforms. I contributed to
+                    shipped titles including League of War, Knight Storm, Bounty Bots, My Horse, Ivory Tiles, and Shift.
+                </p>
+            </div>
+            <div class="resume-item">
+                <p>
+                    <b>Game Engineer for PlayFirst Inc.</b></br>
+                    Aug 2012 - Aug 2013 (1 year 1 month) </br>
+                    <em>San Francisco, CA</em></br>
+                    For the iOS game “Diner Dash Rush,” I was the lead engineer. I managed the app's requirements &
+                    maintenance. I developed interesting technology that combined data-driven logic of game features
+                    with remote configuration. Other responsibilities included working on tools, gameplay, adding to a
+                    shared game library, and build management.
+                </p>
+            </div>
+            <div class="resume-item">
+                <p>
+                    <b>Gameplay Programmer for Bigpoint, Inc.</b></br>
+                    Jan 2011 - Apr 2012 (1 year 4 months) </br>
+                    <em>San Francisco, CA</em></br>
+                    For the game "The Mummy Online," I quickly and iteratively developed the questing system,
+                    conversation system, achievement system, interactive object system, audio tools, design tools, debug
+                    tools, adventure game mode, PVP game mode, domination game mode, and level scripting system. I also
+                    touched some UI systems, Asset integration, localization, and item loot generation.
+                </p>
+            </div>
+
+            <div class="resume-item">
+                <p>
+                    <b>DSi Contract Programmer for BrandX Games, LLC</b></br>
+                    Sep 2009 - Jan 2010 (5 months) </br>
+                    <em>Redmond, WA</em></br>
+                    I started the company’s Nintendo development by creating a DSi Game Demo by myself without any
+                    mentoring.
+
+                    To make an RTS game from scratch, I developed a game engine in C++ that was Component based with a
+                    specialized content pipeline. The game had 2D Graphics with customizable sprite animations,
+                    arbitrarily sized Scrolling Backgrounds, Steering behaviors, iterative path-finding, and audio for
+                    background music and sound effects.
+
+                </p>
+            </div>
+
+            <h3>Education</h3>
+            <div class="resume-item">
+                <p>
+                    <b>Bachelor of Science in Real-Time Interactive
+                        Simulation</b></br>
+                    2005-2008</br>
+                    <em>Digipen Institute of Technology, Redmond, WA</em>
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- /Resume Section -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="mailto:rudy.castan@digipen.edu" class="footer__link">rudy.castan@digipen.edu</a>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://linkedin.com/in/rudycastan">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://github.com/rudy-digipen">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
